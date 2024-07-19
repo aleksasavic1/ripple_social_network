@@ -1,0 +1,15 @@
+@media (max-width: 385px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .col-md-3 {
+        width: 35%;
+    }
+    .col-md-9 {
+        width: 65%;
+    }
+}

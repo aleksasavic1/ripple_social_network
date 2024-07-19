@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 190px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.login {
+    max-width: 650px;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%, 0.15);
+    padding: 50px;
+}
+
+form div {
+    padding: 15px 0;
+}
+
+form div label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form div input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+form div button {
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
+
+    border-radius: 8px;
+    color: white;
+    border: 1px solid hsl(0, 0%, 80%);
+    background-color: hsla(258, 66%, 19%, 0.1);
+
+
+}
+form div button:hover {
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsla(258, 66%, 29%, 0);
+}
+
+form ul {
+    margin-top: 6px;
+    list-style: none;
+}
+
+form ul li {
+    color: red;
+}
+
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register button {
+    padding: 12px 20px;
+    font-size: 14px;
+
+    border-radius: 8px;
+    color: white;
+    border: 1px solid hsl(0, 0%, 80%);
+    background-color: hsla(258, 66%, 19%, 0.1);
+    cursor: pointer;
+
+    margin-bottom: 30px;
+}
+.register button:hover {
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsla(258, 66%, 29%, 0);
+}
+
+
+.register p {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+
+.registration-modal {
+    display: none;
+    background-color: hsl(206, 55%, 18%);
+    box-shadow: hsla(0, 0%, 0%, 0.8) 0 0 1000px 1000px;
+    max-width: 650px;
+    margin: auto;
+    padding: 50px;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    border: 1px solid hsla(0, 0%, 50%, 0.2);
+}
+
+.registration-modal button#closeModal {
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: hsl(0, 100%, 45%);
+    
+    font-size: 19px;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    cursor: pointer;
+}
+
+
+#editAccount, #logout {
+    color: white;
+    border: 1px solid white;
+    padding: 4px 8px;
+    margin: 0 4px;
+    font-size: 14px;
+    background-color: hsla(0, 100%, 50%, 0.1);
+}
+
+#editAccount:hover, #logout:hover {
+    background-color: hsla(0, 100%, 30%, 0.1);
+}
+
+
+
+.editAcc-modal {
+    display: none;
+    background-color: hsl(206, 55%, 18%);
+    box-shadow: hsla(0, 0%, 0%, 0.8) 0 0 1000px 1000px;
+    max-width: 650px;
+    margin: auto;
+    padding: 50px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    border: 1px solid hsla(0, 0%, 50%, 0.2);
+}
+
+.editAcc-modal button#closeModal {
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: hsl(0, 100%, 45%);
+    
+    font-size: 15.5px;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    cursor: pointer;
+}
+
+#deleteProfile {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+}
+#deleteProfile:hover {
+    background-color: hsl(0, 100%, 45%);
+}
+
+.container {
+    margin-top: 20px;
+    padding-bottom: 36px;
+}
+
+.inner-container {
+    border: 1px solid hsl(176, 100%, 50%);
+    padding: 12px;
+}
+
+
+.inner-container.left-side {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.inner-container img {
+    width: 60%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 3px solid white;
+    margin-bottom: 16px;
+}
+
+.inner-container.right-side form {
+    display: flex;
+    height: 75px;
+}
+
+.inner-container.right-side form textarea {
+    width: 90%;
+    border: 0;
+    padding: 10px;
+    resize: none;
+    outline-color: green;
+}
+
+.inner-container.right-side form button {
+    width: 10%;
+    border: 0;
+    background-color: hsl(0, 0%, 90%);
+}
+
+
+
+#allPosts .single-post {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-top: 15px;
+    color: #000;
+}
+
+#allPosts .single-post .post-content {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+
+#allPosts .single-post .post-actions {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 40%);
+}
+
+#allPosts .single-post .post-actions div button.like-btn {
+    background-image: url('../images/like.png');
+    background-size: 28px;
+    padding: 5px 15px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 0;
+}
+
+#allPosts .single-post .post-actions div button.remove-btn {
+    border-color: red;
+    color: red;
+    padding: 5px 15px;
+}
+
