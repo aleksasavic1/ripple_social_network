@@ -21,6 +21,7 @@ body {
 
 .logo img {
     width: 190px;
+    filter: brightness(118%) drop-shadow(2px 2px 2px hsl(0, 0%, 5%));
 }
 
 h1 {
