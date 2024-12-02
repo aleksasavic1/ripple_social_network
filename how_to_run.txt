@@ -1,4 +1,5 @@
-To start a server on your local host, you can use Python. Simply navigate to this directory in your command 
+1. To start a server on your local host, you can use Python (You need to have Python installed). 
+Simply navigate to this directory in your command 
 prompt and enter:
 python -m http.server
 
@@ -7,7 +8,11 @@ localhost:8000
 
 Just enter this in your browser.
 
-Alternatively, you can also use node.js by typing in the command prompt:
+2. Alternatively, you can also use node.js by typing in the command prompt:
+
+You need to have Node.js installed and type the following command in your terminal: 
+npm install -g http-server
+
 http-server
 It should run on port:
 http://127.0.0.1:8080/
